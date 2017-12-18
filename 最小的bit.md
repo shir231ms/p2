@@ -1,22 +1,3 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-<span style='display:none;'>
-$
-  \newcommand{\ord}[1]{\mathcal{O}\left(#1\right)}
-  \newcommand{\abs}[1]{\lvert #1 \rvert}
-  \newcommand{\floor}[1]{\lfloor #1 \rfloor}
-  \newcommand{\ceil}[1]{\lceil #1 \rceil}
-  \newcommand{\opord}{\operatorname{\mathcal{O}}}
-  \newcommand{\argmax}{\operatorname{arg\,max}}
-  \newcommand{\str}[1]{\texttt{"#1"}}
-$
-</span>
-
 # 最小的bit
 
 ## 題目敘述
