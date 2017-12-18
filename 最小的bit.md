@@ -1,0 +1,56 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<span style='display:none;'>
+$
+  \newcommand{\ord}[1]{\mathcal{O}\left(#1\right)}
+  \newcommand{\abs}[1]{\lvert #1 \rvert}
+  \newcommand{\floor}[1]{\lfloor #1 \rfloor}
+  \newcommand{\ceil}[1]{\lceil #1 \rceil}
+  \newcommand{\opord}{\operatorname{\mathcal{O}}}
+  \newcommand{\argmax}{\operatorname{arg\,max}}
+  \newcommand{\str}[1]{\texttt{"#1"}}
+$
+</span>
+
+# 最小的bit
+
+## 題目敘述
+給你一個int範圍的正整數$n$，你要找出一個最大的$K$使得$\frac{n}{2^K}$是一個正整數
+
+## 輸入說明
+輸入只有一行包含一個int範圍的"正"整數$n(0<n)$
+
+## 輸出說明
+請輸出$2^K$
+
+## 範例輸入
+```
+105472
+```
+
+## 範例輸出
+```
+1024
+```
+
+## 提示
+假設$n=12$，則答案為$4$，我們把$12$和$4$轉換成二進位看看:
+
+  * $12 = \underbrace{0 \dots 01100_2}_{32}$
+  * $4 = \underbrace{0 \dots 00100_2}_{32}$
+
+有沒有發現$4$只有第3個bit和$12$一樣是1，其他的bit都是0，好好利用這個性質，正解只需要簡單的位元運算和簡單正負變換就做出來了喔！
+
+## 限制
+時間限制 1s
+
+記憶體限制 512MB
+
+其中
+  * 總共有四個測資
+  * 第一筆測資為範例測資，佔25%的分數
