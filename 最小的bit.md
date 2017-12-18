@@ -1,37 +1,32 @@
-# 最小的bit
+#### Code
 
-## 題目敘述
-給你一個int範圍的正整數$n$，你要找出一個最大的 $K$ 使得$\frac{n}{2^K}$是一個正整數
+Code can be inline, `using backticks`. Or it can be in blocks, either with backtick "fences" or with indents of four spaces. (I prefer fences.)
 
-## 輸入說明
-輸入只有一行包含一個int範圍的"正"整數$n(0<n)$
-
-## 輸出說明
-請輸出$2^K$
-
-## 範例輸入
-```
-105472
+```python
+print('You get syntax highlighting...')
+print('...if you include the language name')
 ```
 
-## 範例輸出
+You can also syntax-highlight some other cool stuff, like file diffs:
+```diff
+- This line got removed
++ This line got added
 ```
-1024
-```
 
-## 提示
-假設$n=12$，則答案為$4$，我們把$12$和$4$轉換成二進位看看:
+#### Math
 
-  * $12 = \underbrace{0 \dots 01100_2}_{32}$
-  * $4 = \underbrace{0 \dots 00100_2}_{32}$
+Math forumlae use TeX. Some examples:
 
-有沒有發現$4$只有第3個bit和$12$一樣是1，其他的bit都是0，好好利用這個性質，正解只需要簡單的位元運算和簡單正負變換就做出來了喔！
+##### The quadratic equation
+$-b \pm \sqrt{b^2 - 4ac} \over 2a$
 
-## 限制
-時間限制 1s
+##### The probability of getting (k) heads when flipping (n) coins
+$\[P(E)   = {n \choose k} p^k (1-p)^{ n-k} \]$
 
-記憶體限制 512MB
+##### The Lorenz Equations
+$\dot{x} = \sigma(y-x) \\ \dot{y} = \rho x - y - xz \\ \dot{z} = -\beta z + xy$
 
-其中
-  * 總共有四個測資
-  * 第一筆測資為範例測資，佔25%的分數
+##### The Cauchy-Schwarz Inequality
+$\[ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) \]$
+
+[Math examples are from here](http://www.mathjax.org/demos/tex-samples/)
